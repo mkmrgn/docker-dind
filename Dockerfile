@@ -1,6 +1,11 @@
 FROM docker:20.10-dind
 
-MAINTAINER Billy Ray Teves <billyteves@gmail.com>
+# ensure all builds runs with Buildkit
+ENV DOCKER_BUILDKIT=1
+# enable full log of Buildkit builds
+ENV BUILDKIT_PROGRESS=plain
+# enable Buildx integration with docker
+ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
 # Let's start with some basic stuff.
 RUN apk add --no-cache git make curl
