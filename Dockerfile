@@ -3,14 +3,7 @@ FROM docker:latest
 MAINTAINER Billy Ray Teves <billyteves@gmail.com>
 
 # Let's start with some basic stuff.
-RUN apt-get update -qq && apt-get install -qqy \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    lxc \
-    iptables \
-    make \
-    git
+RUN apk add --no-cache git make curl
     
 # Install Docker from Docker Inc. repositories.
 RUN curl -sSL https://get.docker.com/ | sh
