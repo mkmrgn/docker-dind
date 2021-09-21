@@ -1,4 +1,4 @@
-FROM docker:2.10-dind
+FROM docker:20.10-dind
 
 MAINTAINER Billy Ray Teves <billyteves@gmail.com>
 
