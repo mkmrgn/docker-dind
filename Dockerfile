@@ -1,4 +1,5 @@
-FROM docker:20.10-dind
+#FROM docker:20.10-dind
+FROM crazymax/docker
 
 # ensure all builds runs with Buildkit
 ENV DOCKER_BUILDKIT=1
