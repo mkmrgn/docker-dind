@@ -9,7 +9,7 @@ ENV BUILDKIT_PROGRESS=plain
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
 # Let's start with some basic stuff.
-RUN apk add --no-cache git make curl bundler
+RUN apk add --no-cache git make curl ruby-bundler
 
 # Install the magic wrapper.
 ADD ./wrapdocker /usr/local/bin/wrapdocker
