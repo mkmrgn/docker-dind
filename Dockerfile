@@ -9,7 +9,7 @@ ENV BUILDKIT_PROGRESS=plain
 ENV DOCKER_CLI_EXPERIMENTAL=enabled
 
 # Let's start with some basic stuff.
-RUN apk add --no-cache git make curl ruby-bundler
+RUN apk add --no-cache git make curl ruby-bundler ruby-json
 RUN gem update --system --force
 
 # Install the magic wrapper.
