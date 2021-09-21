@@ -1,4 +1,4 @@
-FROM docker:latest
+FROM docker:stable
 
 MAINTAINER Billy Ray Teves <billyteves@gmail.com>
 
